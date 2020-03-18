@@ -10,7 +10,7 @@
             <tbody>
                 <tr>
                 
-                    <td><?php echo $row['FirstName'].' '.$row['MiddleName'].' '.$row['LastName']; ?></td> 
+                    <td><?php echo strtoupper($row['FirstName'].' '.$row['MiddleName'].' '.$row['LastName']); ?></td> 
                     <td><?php echo $row['email']; ?></td> 
                     <td><?php echo $row['Gender']; ?></td>
                     <td><?php echo $row['Number']; ?></td>

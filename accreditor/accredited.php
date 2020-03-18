@@ -18,42 +18,35 @@
         <br>
         <br>
         <br>
-
-      <h1>  Boarder </h1>
+      <h1>Accredited Boarding House </h1>
       <br>
-        <br>
-        <br>
+      <br>
         <div class="table_position">
             
-            <table class="table">  
-                 
+            <table class="table">   
             <thead class="thead-dark">
         
             <tr>     
-                <th scope="col">Name</th>
-                <th scope="col">Age</th>
-                <th scope="col">School</th>   
-                <th scope="col">Status</th>   
-                <th scope="col">UserName</th>     
-                <th scope="col">Password</th>      
-                <th scope="col">Gender</th>   
-                <th scope="col">Number</th>   
-                <th scope="col">Email</th>   
-                <th scope="col">Action</th>  
+            
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Number</th>
+            <th scope="col">Rent</th>
+            <th scope="col">Action</th>  
+
             </tr>
 
-             <?php  include 'getboarder.php';?>
-    
-            </thead>
+             <?php include 'getaccredited.php'?>
 
+            </thead>
             </table>  
 
         </div>
 
     </div>
-
     
 
 
+           
 </body>
 </html>
