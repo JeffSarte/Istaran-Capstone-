@@ -24,7 +24,7 @@ include '../include/conn.php';
 
                          <a href="delbhouse.php?id=<?php echo $row['id']; ?>" ><i class="fas fa-trash"> </i></a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href=""><i class="fas fa-edit"></i></a>
+                        <a href="updatebhouse.php?id=<?php echo $row['id']?>"><i class="fas fa-edit"></i></a>
                                     
                      </td>
             </tbody>

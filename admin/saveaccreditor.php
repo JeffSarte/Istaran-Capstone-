@@ -1,6 +1,11 @@
 <?php
     include '../include/conn.php';
-
+  if ($_GET['id'] != 0 )
+  { 
+    
+  }
+  else
+  {
     $email = $_POST['email'];
     $number = $_POST['number'];
     $school = $_POST['school'];
@@ -18,5 +23,5 @@
       header ('location:accreditor.php');  
 
 
-
+    }
 ?>

@@ -15,7 +15,6 @@
     $image  = $_FILES['image']['name'];
 
 
-    echo $bhouse_id;
  
 
     $query ="INSERT into boardinghouse (Name , Address,Number, Rent , bhouse_id ,image) values ('$name', '$address','$number','$rent','$bhouse_id','$image');";
@@ -34,6 +33,6 @@
         $msg = "not";
         echo $msg;
     }
-    //header('location:bhouse.php');
+    header('location:bhouse.php');  
     
 ?>

@@ -17,7 +17,7 @@
   <?php  include 'dashboard.php'; ?>
 
     <div class="content">
-       
+       <div class="card_position">
               
       <br><br><br><br><br><br><br><br>
       <div class="card" style="width: 20rem;">
@@ -77,7 +77,7 @@
             </div>
         
       
-
+            </div>
     </div>
 
   </body>

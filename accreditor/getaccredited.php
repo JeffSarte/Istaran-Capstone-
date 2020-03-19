@@ -39,7 +39,7 @@ include '../include/conn.php';
 
                     
                     echo ' Not Accredited'; 
-                } else
+                } else  
                 {
                     echo 'accredited';
                 }
@@ -49,7 +49,7 @@ include '../include/conn.php';
                     ?></td>
                
 
-                   <td> <a href="details.php?id=<?php echo $row['id'];?>"> View Details</a></td>
+                   <td> <a href="details.php?id=<?php echo $row['id'];?>"> <i class="fas fa-eye fa-2x"></i></a></td>
                 </tr>
             </tbody>
             

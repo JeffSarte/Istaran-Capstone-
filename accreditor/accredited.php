@@ -30,12 +30,11 @@
             
             <th scope="col">Name</th>
             <th scope="col">Address</th>
-            <th scope="col">Number</th>
-            <th scope="col">Rent</th>
-            <th scope="col">Action</th>  
+            <th scope="col">Status</th> 
+            <th scope="col">View</th>  
 
             </tr>
-
+            
              <?php include 'getaccredited.php'?>
 
             </thead>

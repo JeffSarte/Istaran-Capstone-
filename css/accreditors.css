@@ -10,7 +10,7 @@ body{
     padding-top: 70px;
     position: fixed;
     left: 0;
-    width: 230px;
+    width: 265px;
     height: 100%;
     transition: 0.5s;
     transition-property: left;
@@ -85,4 +85,8 @@ body{
   .modal_position{
     margin-top: -150px;
   
+  }
+  .sds
+  {
+    
   }

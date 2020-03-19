@@ -52,56 +52,77 @@
 
         </div>
 
-        <div v-if="modal">
+       
+        <?php
+
+
+                    include '../include/conn.php';
+
+                    $id  = $_GET['id'];
+                    $query = "SELECT * from boardinghouse where id  = $id";
+
+                    $result = mysqli_query($conn , $query);
+
+
+                    while ($row  =  mysqli_fetch_array($result))
+                    {
+                    ?>
+
+
+
     <div class="modal_position ">
         
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                   <h5 class="modal-title">Add Boarding House</h5>
-                  <button class="close" type="button" @Click="modal = false">
+                   <h5 class="modal-title">Update Boarding House</h5>
+                   <a href="bhouse.php">  <button class="close" type="button" @Click="modal = false">
                   <span aria-hidden="true"> &times</span>
                   </button>
+                    </a>
                 </div>
                     <div class="modal-body p-4">
-                        <form action="savebhouse.php" method="POST" enctype="multipart/form-data">
+                        <form action="saveupdatebhouse.php" method="POST" enctype="multipart/form-data">
 
                            
                             <div class="form-group">
-                             <input type="text" name="name" class="form-control form-control-lg" 
+                             <input type="text" name="name" value="<?php echo $row['Name']?>" class="form-control form-control-lg" 
                              placeholder="Name">
                             </div>
 
                             <div class="form-group">
-                             <input type="text" name="address" class="form-control form-control-lg" 
+                             <input type="text" name="address" value="<?php echo $row['Address']?>"  class="form-control form-control-lg" 
                              placeholder="Address">
                             </div>
 
                             <div class="form-group">
-                             <input type="text" name="number" class="form-control form-control-lg" 
+                             <input type="text" name="number" value="<?php echo $row['Number']?>"  class="form-control form-control-lg" 
                              placeholder="Mobile Number">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="rent" class="form-control form-control-lg" 
+                                <input type="text" name="rent"  value="<?php echo $row['Rent']?>" class="form-control form-control-lg" 
                                 placeholder="Rent"> 
                             </div>
-
+                            
+                            
                             <div class="form-group">
-                                <input type="file" name="image" class="form-control form-control-lg" 
+                                <input type="file" name="image" value="<?php echo $row['image']?>"class="form-control form-control-lg" 
                                 placeholder="Image">
                             </div>
                            
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" class="btn btn-primary">Update Boarding House</button>
                             </div>
         
                         </form>
                     </div>
             </div>
             </div>
-            </div>
-
-    </div>
+            
+                <?php
+            }
+                ?>
+        </div>
     </div>
     </div>
 

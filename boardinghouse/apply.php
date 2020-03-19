@@ -38,7 +38,7 @@
                 <th scope="col">Action</th>     
 
             </tr>
-
+            
             <?php  include 'getaccreditor.php';?>
 
             </thead>
@@ -73,11 +73,10 @@
                 </div>
                     <div class="modal-body p-4">
                         <form action="saveaccreditation.php" method="POST">
-                    
-                        <input type="hidden" name="accreditor_id" values="<?php echo $_GET['id'];?>">
-                        <input type="hidden" name="owner_id" values="<?php echo $_SESSION['id'];?>">
-                        <?php echo $_GET['id'];?>
-                        <?php echo $_SESSION['id'];?>
+                       
+                        <input type="hidden" name="getid" value="<?php echo $row['id'];?>" >
+                        <input type="hidden"  value="<?php echo $id =$_SESSION['id'];?>">
+                      
                         <div class="form-group">
                                 <input type="text" name="school" value="<?php echo $row['School'];?>" class="form-control form-control-lg" 
                                 readonly>
