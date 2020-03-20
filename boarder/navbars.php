@@ -17,7 +17,7 @@
 
     
     <li class="nav-item">
-        <a class="nav-link" href="Index.php">Home</a>
+        <a class="nav-link" href="../index.php">Home</a>
       </li> &nbsp; &nbsp;  &nbsp;  &nbsp;  
       <li class="nav-item">
         <a class="nav-link" href="about.php">About Us</a>
@@ -28,7 +28,7 @@
       </li>&nbsp; &nbsp;  &nbsp;  &nbsp;  
          
       <li class="nav-item ">
-        <a class="nav-link" href="boarders">Log In</a>
+        <a class="nav-link" href="#">Logs In</a>
         </a>
         
       </li>
