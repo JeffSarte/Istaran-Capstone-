@@ -9,6 +9,7 @@ $result = mysqli_query($conn,"SELECT * FROM boarder WHERE UserName='" . $_POST["
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
 $_SESSION["id"] = $row['id'];
+$_SESSION["fname"] = $row['FirstName'];
 
 }
 }
@@ -20,5 +21,5 @@ else
     header("Location:index.php");
 
 }  
-d
+
 ?>

@@ -11,10 +11,11 @@
 </head>
 <body>
 
-<?php include '../navbars.php'; ?>
+<?php include '../navbar.php'; ?>
 
 <form action="login.php" method="POST">
 
+<div modal_position>  
 <div style="margin-top: 150px">
 
 

@@ -1,0 +1,37 @@
+
+body {
+    padding-top: 50px;
+  }
+  
+  .carousel-item {
+    height: 65vh;
+    min-height: 200px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .portfolio-item {
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  .title_position{
+  
+    margin-left: 1in;
+  }
+  
+  .card_position{
+  
+    margin-left: 10px;
+  }
+  
+  
+  .position{
+  
+    margin-left: 12in;
+  }
+  
